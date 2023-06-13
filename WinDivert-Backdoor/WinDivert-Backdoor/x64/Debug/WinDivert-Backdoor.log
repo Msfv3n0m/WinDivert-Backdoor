@@ -1,9 +1,0 @@
-﻿  Source.c
-C:\Users\Quaki\Desktop\WinDivert-Backdoor\WinDivert-Backdoor\Source.c(226,41): warning C4047: 'function': 'UINT' differs in levels of indirection from 'void *'
-C:\Users\Quaki\Desktop\WinDivert-Backdoor\WinDivert-Backdoor\Source.c(226,37): warning C4024: 'WinExec': different types for formal and actual parameter 2
-C:\Users\Quaki\Desktop\WinDivert-Backdoor\WinDivert-Backdoor\Source.c(91,10): warning C4101: 'src_str': unreferenced local variable
-C:\Users\Quaki\Desktop\WinDivert-Backdoor\WinDivert-Backdoor\Source.c(89,25): warning C4101: 'dst_addr': unreferenced local variable
-C:\Users\Quaki\Desktop\WinDivert-Backdoor\WinDivert-Backdoor\Source.c(91,41): warning C4101: 'dst_str': unreferenced local variable
-C:\Users\Quaki\Desktop\WinDivert-Backdoor\WinDivert-Backdoor\Source.c(89,12): warning C4101: 'src_addr': unreferenced local variable
-C:\Users\Quaki\Desktop\WinDivert-Backdoor\WinDivert-Backdoor\Source.c(187,33): warning C4101: 'pi': unreferenced local variable
-  WinDivert-Backdoor.vcxproj -> C:\Users\Quaki\Desktop\WinDivert-Backdoor\x64\Debug\WinDivert-Backdoor.exe
