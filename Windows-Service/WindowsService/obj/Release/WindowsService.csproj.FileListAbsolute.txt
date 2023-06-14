@@ -1,0 +1,10 @@
+C:\Users\jlbie\source\repos\WindowsService\WindowsService\bin\Release\WindowsService.exe.config
+C:\Users\jlbie\source\repos\WindowsService\WindowsService\bin\Release\WindowsService.exe
+C:\Users\jlbie\source\repos\WindowsService\WindowsService\bin\Release\WindowsService.pdb
+C:\Users\jlbie\source\repos\WindowsService\WindowsService\obj\Release\WindowsService.csproj.AssemblyReference.cache
+C:\Users\jlbie\source\repos\WindowsService\WindowsService\obj\Release\WindowsService.csproj.SuggestedBindingRedirects.cache
+C:\Users\jlbie\source\repos\WindowsService\WindowsService\obj\Release\WindowsService.ProjectInstaller.resources
+C:\Users\jlbie\source\repos\WindowsService\WindowsService\obj\Release\WindowsService.csproj.GenerateResource.cache
+C:\Users\jlbie\source\repos\WindowsService\WindowsService\obj\Release\WindowsService.csproj.CoreCompileInputs.cache
+C:\Users\jlbie\source\repos\WindowsService\WindowsService\obj\Release\WindowsService.exe
+C:\Users\jlbie\source\repos\WindowsService\WindowsService\obj\Release\WindowsService.pdb
