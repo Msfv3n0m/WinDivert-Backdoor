@@ -14,9 +14,8 @@
 3. Flourish
 
 ## References
-https://github.com/zer0condition/GDRVLoader
-https://github.com/zer0condition/GDRVLoader
-https://github.com/basil00/Divert
-https://github.com/cocomelonc/2022-05-09-malware-pers-4/tree/master
-https://github.com/r-a303931/pcap-backdoor
-https://github.com/bytecode77/r77-rootkit
+https://github.com/zer0condition/GDRVLoader </br>
+https://github.com/basil00/Divert </br>
+https://github.com/cocomelonc/2022-05-09-malware-pers-4/tree/master </br>
+https://github.com/r-a303931/pcap-backdoor </br>
+https://github.com/bytecode77/r77-rootkit </br>
