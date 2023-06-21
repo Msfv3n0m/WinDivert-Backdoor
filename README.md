@@ -3,7 +3,7 @@
 ### Compatibility
 This project is compatible with Win7, Win8, Win10, WS2012, and WS2016
 ### Server
-1. Install driver with GDRVLoader.exe </br>
+1. Install driver with [GDRVLoader.exe](https://github.com/zer0condition/GDRVLoader) </br>
 `GDRVLoader.exe C:\$77folder\$77kernel.sys` 
 3. Install service </br>
 `sc create $77service binPath= "C:\$77folder\$77service.exe" start= auto`
