@@ -13,9 +13,10 @@ This project is compatible with Win7, Win8, Win10, WS2012, and WS2016
 6. Install [rootkit](https://github.com/bytecode77/r77-rootkit) </br>
 `Install.exe`
 ### Client
-1. [Install Scapy](https://scapy.readthedocs.io/en/latest/installation.html)
-2. Download client.py script
-3. Flourish
+1. Install python
+2. [Install Scapy](https://scapy.readthedocs.io/en/latest/installation.html)
+3. Download client.py script
+4. Flourish
 
 ## References
 | Link to Project                                                                  | Code Used?      | License                                                                                              |
