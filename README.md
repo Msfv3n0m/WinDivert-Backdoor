@@ -17,10 +17,10 @@ This project is compatible with Win7, Win8, Win10, WS2012, and WS2016
 3. Flourish
 
 ## References
-| Link to Project                                                     | Code Used?      | License                                                                                              |
-|---------------------------------------------------------------------|-----------------|------------------------------------------------------------------------------------------------------|
-| https://github.com/zer0condition/GDRVLoader                         | No              | None                                                                                                 |
-| https://github.com/basil00/Divert                                   | Yes             | GNU Lesser General Public License Version 3 or the GNU General Public License Version 2              |
-| https://github.com/cocomelonc/2022-05-09-malware-pers-4/tree/master | Yes             | None                                                                                                 |
-| https://github.com/r-a303931/pcap-backdoor                          | No              | GNU Affero General Public License v3.0                                                               |
-| https://github.com/bytecode77/r77-rootkit                           | No              | BSD 2-Clause "Simplified" License                                                                    |
+| Link to Project                                                                  | Code Used?      | License                                                                                              |
+|----------------------------------------------------------------------------------|-----------------|------------------------------------------------------------------------------------------------------|
+| https://github.com/zer0condition/GDRVLoader                                      | No              | None                                                                                                 |
+| https://github.com/basil00/Divert                                                | Yes             | GNU Lesser General Public License Version 3 or the GNU General Public License Version 2              |
+| https://www.codeproject.com/Articles/499465/Simple-Windows-Service-in-Cplusplus  | Yes             | The Code Project Open License (CPOL) 1.02                                                            |
+| https://github.com/r-a303931/pcap-backdoor                                       | No              | GNU Affero General Public License v3.0                                                               |
+| https://github.com/bytecode77/r77-rootkit                                        | No              | BSD 2-Clause "Simplified" License                                                                    |
