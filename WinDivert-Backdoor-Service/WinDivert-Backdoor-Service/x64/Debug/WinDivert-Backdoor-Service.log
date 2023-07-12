@@ -1,8 +1,0 @@
-﻿  Source.cpp
-C:\Users\Administrator\source\repos\WinDivert-Backdoor-Service\WinDivert-Backdoor-Service\Source.cpp(133,1): warning C4102: 'EXIT': unreferenced label
-C:\Users\Administrator\source\repos\WinDivert-Backdoor-Service\WinDivert-Backdoor-Service\Source.cpp(201,10): warning C4101: 'src_str': unreferenced local variable
-C:\Users\Administrator\source\repos\WinDivert-Backdoor-Service\WinDivert-Backdoor-Service\Source.cpp(199,25): warning C4101: 'dst_addr': unreferenced local variable
-C:\Users\Administrator\source\repos\WinDivert-Backdoor-Service\WinDivert-Backdoor-Service\Source.cpp(201,41): warning C4101: 'dst_str': unreferenced local variable
-C:\Users\Administrator\source\repos\WinDivert-Backdoor-Service\WinDivert-Backdoor-Service\Source.cpp(199,12): warning C4101: 'src_addr': unreferenced local variable
-C:\Users\Administrator\source\repos\WinDivert-Backdoor-Service\WinDivert-Backdoor-Service\Source.cpp(298,33): warning C4101: 'pi': unreferenced local variable
-  WinDivert-Backdoor-Service.vcxproj -> C:\Users\Administrator\source\repos\WinDivert-Backdoor-Service\x64\Debug\WinDivert-Backdoor-Service.exe
