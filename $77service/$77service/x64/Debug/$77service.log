@@ -1,7 +1,0 @@
-﻿  Source.cpp
-C:\Users\Quaki\source\repos\$77service\$77service\Source.cpp(37,14): warning C4101: 'src_str': unreferenced local variable
-C:\Users\Quaki\source\repos\$77service\$77service\Source.cpp(35,29): warning C4101: 'dst_addr': unreferenced local variable
-C:\Users\Quaki\source\repos\$77service\$77service\Source.cpp(37,45): warning C4101: 'dst_str': unreferenced local variable
-C:\Users\Quaki\source\repos\$77service\$77service\Source.cpp(35,16): warning C4101: 'src_addr': unreferenced local variable
-C:\Users\Quaki\source\repos\$77service\$77service\Source.cpp(133,37): warning C4101: 'pi': unreferenced local variable
-  $77service.vcxproj -> C:\Users\Quaki\source\repos\$77service\x64\Debug\$77service.exe
