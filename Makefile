@@ -1,12 +1,26 @@
-service = aaaaaa
-P = C:\Users\Administrator\Downloads\new-divert\MinGW-Devcontainer-main
+service = aa
+WIN_CD = $(shell powershell -c 'pwd | select-object  -expandproperty path')
+LIN_CD = $(shell pwd)
+WIN_COMP	= x86_64-w64-mingw32-g++.exe
+LIN_COMP	= x86_64-w64-mingw32-g++-win32
+TARGET		= main
+default: build setup # Windows only
 build:
-	x86_64-w64-mingw32-g++.exe -o main.exe src/main.cpp src/windivert.h src/WinDivert.lib
-	sc create $(service) binPath= "$(P)\main.exe"
+ifeq ($(SystemDrive),C:)
+	$(WIN_COMP) -w -o $(TARGET).exe src/main.cpp src/windivert.h src/WinDivert.lib
+else
+	$(LIN_COMP) -w -o $(TARGET).exe src/main.cpp src/windivert.h src/WinDivert.lib
+endif
+setup: # Windows only
+	sc create $(service) binPath= "$(WIN_CD)\main.exe"
 	sc start $(service)
-# x86_64-w64-mingw32-g++.exe -o main.exe main.o -L lib -municode
-del:
+rm:
 	sc delete $(service)
 	sc stop $(service)
+	taskkill /f /fi "SERVICES eq $(service)"
 clean:
-	rm -rf main.exe
+ifeq ($(SystemDrive),C:)
+	del "$(WIN_CD)\main.exe" /f
+else
+	rm -rf "$(LIN_CD)/main.exe"
+endif
