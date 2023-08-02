@@ -41,6 +41,8 @@ This project is compatible with Win7, Win8, Win10, WS2012, and WS2016
 `pip install -R requirements.txt` </br>
 5. Flourish
 
+## Issues
+The windows service doesn't exit properly, so you have to kill the process (as shown in the makefile)
 ## References
 | Link to Project                                                                  | Code Used?      | License                                                                                              |
 |----------------------------------------------------------------------------------|-----------------|------------------------------------------------------------------------------------------------------|
