@@ -45,7 +45,6 @@ The windows service doesn't exit properly, so you have to kill the process (as s
 ## References
 | Link to Project                                                                  | Code Used?      | License                                                                                              |
 |----------------------------------------------------------------------------------|-----------------|------------------------------------------------------------------------------------------------------|
-| https://github.com/zer0condition/GDRVLoader                                      | No              | None                                                                                                 |
 | https://github.com/basil00/Divert                                                | Yes             | GNU Lesser General Public License Version 3 or the GNU General Public License Version 2              |
 | https://www.codeproject.com/Articles/499465/Simple-Windows-Service-in-Cplusplus  | Yes             | The Code Project Open License (CPOL) 1.02                                                            |
 | https://github.com/r-a303931/pcap-backdoor                                       | No              | GNU Affero General Public License v3.0                                                               |
