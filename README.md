@@ -24,15 +24,13 @@ Then just run `make`!
 ### Compatibility
 This project is compatible with Win7, Win8, Win10, WS2012, and WS2016
 ### Server
-1. Copy WinDivert.dll and WinDivert64.sys to C:\Windows\System32 folder 
-2. Install driver with [GDRVLoader.exe](https://github.com/zer0condition/GDRVLoader) </br>
-`GDRVLoader.exe \Windows\System32\WinDivert64.sys` 
-3. Install service </br>
+1. Copy WinDivert.dll to C:\Windows\System32 folder 
+2. Install service </br>
 `sc create WinDivertService binPath= "C:\path\to\main.exe" start= auto` </br>
 `sc description WinDivertService "this is a description"`
-5. Start service </br>
+3. Start service </br>
 `sc start WinDivertService`
-6. (Optional) Install [rootkit](https://github.com/bytecode77/r77-rootkit) </br>
+4. (Optional) Install [rootkit](https://github.com/bytecode77/r77-rootkit) </br>
 `Install.exe`
 ### Client
 1. Install python and pip
